@@ -1,16 +1,37 @@
-import React from 'react';
-import characters from './data/characters.json';
-import CharactersList from './components/CharactersList';
-import NumberOfCharacters from './components/NumberOfCharacters';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Layout from "./Layout";
+import CharactersPage from "./pages/CharactersPage";
+import AboutPage from "./pages/AboutPage";
+import ContactPage from "./pages/ContactPage";
+import "./App.css";
 
 function App() {
-  return (
-    <div>
-      <h1>Personnages Marvel</h1>
-      <NumberOfCharacters characters={characters} />
-      <CharactersList characters={characters} />
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <CharactersPage />,
+        },
+        {
+          path: "about",
+          element: <AboutPage />,
+        },
+        {
+          path: "contact",
+          element: <ContactPage />,
+        },
+        {
+          path: "*",
+          element: <div>Page not found</div>,
+        },
+      ],
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
