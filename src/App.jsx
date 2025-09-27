@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Layout from "./Layout";
 import CharactersPage from "./pages/CharactersPage";
+import CharacterDetailPage from "./pages/CharacterDetailPage"; // 👈 nouvelle page
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import "./App.css";
@@ -14,6 +15,10 @@ function App() {
         {
           index: true,
           element: <CharactersPage />,
+        },
+        {
+          path: "characters/:id", // 👈 route dynamique
+          element: <CharacterDetailPage />,
         },
         {
           path: "about",

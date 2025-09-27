@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import characters from '../data/characters.json';
-import CharactersList from '../components/CharactersList';
 import NumberOfCharacters from '../components/NumberOfCharacters';
 
 function CharactersPage() {
@@ -9,10 +9,22 @@ function CharactersPage() {
   }, []);
 
   return (
-    <div>
-      <h1>Personnages Marvel</h1>
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-4">Personnages Marvel</h1>
       <NumberOfCharacters characters={characters} />
-      <CharactersList characters={characters} />
+
+      <ul className="mt-4 space-y-2">
+        {characters.map((character) => (
+          <li key={character.id}>
+            <Link
+              to={`/characters/${character.id}`} // navigation vers CharacterDetailPage
+              className="text-blue-600 hover:underline"
+            >
+              {character.name} {character.alias ? `(${character.alias})` : ''}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

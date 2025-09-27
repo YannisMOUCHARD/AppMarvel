@@ -1,46 +1,44 @@
 [
-    {
-        "id": "1009175",
-        "name": "Beast"
-    },
-    {
-        "id": "1009220",
-        "name": "Captain America"
-    },
-    {
-        "id": "1009268",
-        "name": "Deadpool"
-    },
-    {
-        "id": "1010743",
-        "name": "Groot"
-    },
-    {
-        "id": "1009351",
-        "name": "Hulk"
-    },
-    {
-        "id": "1009368",
-        "name": "Iron Man"
-    },
-    {
-        "id": "1010744",
-        "name": "Rocket Raccoon"
-    },
-    {
-        "id": "1009592",
-        "name": "Silver Surfer"
-    },
-    {
-        "id": "1009697",
-        "name": "Thanos"
-    },
-    {
-        "id": "1009663",
-        "name": "Thor"
-    },
-    {
-        "id": "1009718",
-        "name": "Wolverine"
-    }
+  {
+    "id": "1009220",
+    "name": "Captain America",
+    "alias": "Steve Rogers",
+    "bio": "Super-soldat américain de la Seconde Guerre mondiale, symbole de liberté et de justice.",
+    "image": "../image/captain.jpg"
+  },
+  {
+    "id": "1009268",
+    "name": "Deadpool",
+    "alias": "Wade Wilson",
+    "bio": "Mercenaire immortel à l’humour noir, doté d’un facteur régénérant.",
+    "image": "../image/deadpool.jpg"
+  },
+  {
+    "id": "1009368",
+    "name": "Iron Man",
+    "alias": "Tony Stark",
+    "bio": "Génie, milliardaire, inventeur de l’armure Iron Man.",
+    "image": "../image/ironman.jpg"
+  },
+  {
+    "id": "1009697",
+    "name": "Thanos",
+    "alias": "",
+    "bio": "Seigneur de guerre intergalactique obsédé par l’équilibre cosmique.",
+    "image": "../image/thanos.jpg"
+  },
+  {
+    "id": "1009663",
+    "name": "Thor",
+    "alias": "Thor Odinson",
+    "bio": "Dieu du tonnerre d’Asgard maniant Mjolnir.",
+    "image": "../image/thor.jpg"
+  },
+  {
+    "id": "1009718",
+    "name": "Wolverine",
+    "alias": "Logan",
+    "bio": "Mutant doté de griffes en adamantium et d’un facteur auto-guérisseur.",
+    "image": "../image/wolverine.jpg"
+  }
 ]
