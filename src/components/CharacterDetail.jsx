@@ -9,7 +9,7 @@ const CharacterDetail = ({ character }) => {
       ) : (
         <p>No image available</p>
       )}
-      <p>{character.description}</p>
+      <p>{character.bio}</p> {/* <-- Corrige ici */}
     </div>
   );
 };

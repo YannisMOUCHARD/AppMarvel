@@ -1,32 +1,26 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import characters from '../data/characters.json';
-import NumberOfCharacters from '../components/NumberOfCharacters';
+import { useLoaderData } from "react-router-dom";
+import { getCharacters } from "../api/characters-api";
+import CharactersList from "../components/CharactersList";
 
-function CharactersPage() {
-  useEffect(() => {
-    document.title = 'Characters - Marvel App';
-  }, []);
+const CharactersPage = () => {
+  const characters = useLoaderData();
+  console.log("Characters in page:", characters);
+
+  if (!characters || characters.length === 0) {
+    return <p>Aucun personnage trouvé.</p>;
+  }
 
   return (
-    <div className="p-6">
-      <h1 className="text-3xl font-bold mb-4">Personnages Marvel</h1>
-      <NumberOfCharacters characters={characters} />
-
-      <ul className="mt-4 space-y-2">
-        {characters.map((character) => (
-          <li key={character.id}>
-            <Link
-              to={`/characters/${character.id}`} // navigation vers CharacterDetailPage
-              className="text-blue-600 hover:underline"
-            >
-              {character.name} {character.alias ? `(${character.alias})` : ''}
-            </Link>
-          </li>
-        ))}
-      </ul>
+    <div>
+      <h1>Liste des personnages</h1>
+      <CharactersList characters={characters} />
     </div>
   );
+};
+
+// Le loader doit être SYNCHRONE si getCharacters() retourne un tableau
+export function loader() {
+  return getCharacters();
 }
 
 export default CharactersPage;

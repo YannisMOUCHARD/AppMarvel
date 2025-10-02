@@ -1,13 +1,23 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function CharactersList({ characters = [] }) {
-  const firstThree = characters.slice(0, 11);
-
-  const listItems = firstThree.map((character) => (
-    <li key={character.id}>{character.name}</li>
-  ));
-
-  return <ul>{listItems}</ul>;
+  return (
+    <ul>
+      {characters.map((character) => (
+        <li key={character.id}>
+          <Link to={`/characters/${character.id}`}>
+            <strong>{character.name}</strong>
+            {character.alias && <> ({character.alias})</>}
+          </Link>
+          <br />
+          {character.image && (
+            <img src={character.image} alt={character.name} width={100} />
+          )}
+        </li>
+      ))}
+    </ul>
+  );
 }
 
 export default CharactersList;
