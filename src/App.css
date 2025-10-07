@@ -2,18 +2,14 @@
 
 * {
   box-sizing: border-box;
-}
-
-#root {
-  width: 100%;
   margin: 0;
   padding: 0;
-  text-align: center;
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+}
+
+html {
+  height: 100%;
   background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-attachment: fixed;
 }
 
 body {
@@ -21,11 +17,21 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  height: 100vh;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+  background-attachment: fixed;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
   display: flex;
   flex-direction: column;
-  background: #0a0a0a;
-  color: #ffffff;
+  min-height: 100vh;
+  background: transparent;
 }
 
 h1 {
@@ -49,7 +55,7 @@ h2 {
 }
 
 h3 {
-  color: #ff5722;
+  color: #ffffff;
   font-size: 1.5rem;
   margin: 15px 0;
 }
@@ -59,18 +65,28 @@ h3 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+  flex-grow: 1;
+}
+
+/* Container pour les caractères */
+.characters-container {
+  min-height: calc(100vh - 300px);
+  width: 100%;
+  background: transparent;
+  padding: 20px 0;
 }
 
 /* Liste des personnages */
 ul {
   list-style: none;
-  margin: 20px 0;
-  padding: 0;
+  margin: 0;
+  padding: 20px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
   max-width: 1200px;
-  margin: 20px auto;
+  margin: 0 auto;
+  background: transparent;
 }
 
 li {
@@ -84,6 +100,7 @@ li {
   border: 2px solid transparent;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 li::before {
@@ -119,31 +136,45 @@ li:hover img {
   transform: scale(1.05);
 }
 
-/* Navigation */
+/* Navigation - CORRECTION DES BUGS */
 nav {
-  background: linear-gradient(90deg, #212121, #424242);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   padding: 15px;
   box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+  border-bottom: 2px solid #f44336;
 }
 
 nav ul {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   padding: 0;
   margin: 0;
   gap: 30px;
+  list-style: none;
+  grid-template-columns: none !important;
 }
 
 nav li {
-  background: none;
-  box-shadow: none;
+  background: none !important;
+  box-shadow: none !important;
   margin: 0;
   padding: 0;
+  border: none !important;
+  transform: none !important;
+  cursor: default;
+  animation: none !important;
+  position: static;
+}
+
+nav li::before,
+nav li::after {
+  display: none !important;
 }
 
 nav li:hover {
-  transform: none;
-  border-color: transparent;
+  transform: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 nav a {
@@ -156,6 +187,7 @@ nav a {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  display: inline-block;
 }
 
 nav a::before {
@@ -190,7 +222,7 @@ nav a.active {
 footer {
   margin: 0;
   padding: 25px;
-  background: linear-gradient(90deg, #212121, #424242);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
   color: #ffffff;
   text-align: center;
   margin-top: auto;
@@ -198,24 +230,44 @@ footer {
   border-top: 3px solid #f44336;
 }
 
-/* Liens */
-li a {
-  color: #ffffff;
-  text-decoration: none;
+/* Liens des cartes - AMÉLIORATION POUR CARTE CLIQUABLE */
+li:not(nav li) a {
+  color: #ffffff !important;
+  text-decoration: none !important;
   font-weight: 500;
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
-li a:hover {
-  color: #f44336;
+li:not(nav li) a:hover {
+  color: #f44336 !important;
   text-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
 }
 
-li strong {
+li:not(nav li) strong {
   display: block;
   margin-bottom: 10px;
   font-size: 1.3rem;
+  pointer-events: none;
+}
+
+/* Indicateur visuel - UNIQUEMENT POUR LES CARTES */
+li:not(nav li)::after {
+  content: '👁️';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+li:not(nav li):hover::after {
+  opacity: 0.7;
 }
 
 /* Compteur de personnages */
@@ -263,17 +315,17 @@ p {
     padding: 20px 10px;
   }
   
-  ul {
+  ul:not(nav ul) {
     grid-template-columns: 1fr;
     padding: 0 10px;
   }
   
   nav ul {
-    flex-direction: column;
+    flex-direction: column !important;
     gap: 10px;
   }
   
-  li {
+  li:not(nav li) {
     padding: 15px;
   }
 }
@@ -287,13 +339,13 @@ p {
     font-size: 1.5rem;
   }
   
-  li {
+  li:not(nav li) {
     margin: 10px;
     padding: 10px;
   }
 }
 
-/* Animations */
+/* Animations - UNIQUEMENT POUR LES CARTES */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -305,7 +357,7 @@ p {
   }
 }
 
-li {
+li:not(nav li) {
   animation: fadeIn 0.6s ease-out;
 }
 

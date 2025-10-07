@@ -25,19 +25,19 @@ const CharacterDetail = ({ character }) => {
       <div style={{ marginBottom: '20px' }}>
         <h3>Description</h3>
         {character.description && character.description.trim() !== "" ? (
-          <p style={{ fontSize: '1.1em', lineHeight: '1.5', color: '#333' }}>
+          <p style={{ fontSize: '1.1em', lineHeight: '1.5', color: '#ffffff' , }}>
             {character.description}
           </p>
         ) : (
-          <p style={{ fontStyle: 'italic', color: '#666' }}>
+          <p style={{ fontStyle: 'italic', color: '#ffffff' }}>
             No description available
           </p>
         )}
       </div>
 
       {/* Informations détaillées */}
-      <div style={{ marginTop: '20px', fontSize: '0.9em', color: '#888' }}>
-        <h3 style={{ color: '#333', fontSize: '1.1em' }}>Details</h3>
+      <div style={{ marginTop: '20px', fontSize: '0.9em', color: '#ffffff' }}>
+        <h3 style={{ color: '#ffffff', fontSize: '1.1em' }}>Details</h3>
         <p><strong>ID:</strong> {character.id}</p>
         {character.modified && (
           <p><strong>Last modified:</strong> {new Date(character.modified).toLocaleDateString()}</p>

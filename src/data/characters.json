@@ -2,7 +2,7 @@
     {
         "id": "1009175",
         "name": "Beast",
-        "description": "",
+        "description": "A brilliant scientist and founding member of the X-Men, Hank McCoy possesses superhuman strength, agility, and an ape-like appearance.",
         "modified": "2014-01-13T14:48:32-0500",
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
@@ -22,6 +22,7 @@
     {
         "id": "1009268",
         "name": "Deadpool",
+        "description": "A former Special Forces operative turned mercenary, Wade Wilson gained accelerated healing powers through the Weapon X program, becoming the wise-cracking anti-hero known as Deadpool.",
         "modified": "2020-04-04T19:02:15-0400",
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99",
@@ -31,7 +32,7 @@
     {
         "id": "1010743",
         "name": "Groot",
-        "description": "",
+        "description": "A Flora colossus from Planet X, Groot is a sentient tree-like being who serves as the muscle of the Guardians of the Galaxy. Despite his limited vocabulary, he's incredibly loyal and powerful.",
         "modified": "2013-10-17T15:01:37-0400",
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/526033c8b474a",
@@ -64,8 +65,8 @@
         "description": "A genetically-engineered alien with a knack for big guns and fast ships, Rocket serves as the backbone of the Guardians of the Galaxy!",
         "modified": "2014-07-17T17:32:43-0400",
         "thumbnail": {
-          "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
-          "extension": "jpg"
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
+            "extension": "jpg"
         }
     },
     {
@@ -74,8 +75,138 @@
         "description": "When Zenn-La was threatened by the world-devouring entity known as Galactus, Norrin Radd stood up for his home planet and offered to work for Galactus, finding him new planets to eat, in exchange for saving his own. Years later, the Surfer has protected Earth and many other planets, becoming one of the greatest heroes in the universe.",
         "modified": "2013-11-07T10:48:53-0500",
         "thumbnail": {
-          "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
-          "extension": "jpg"
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009610",
+        "name": "Spider-Man",
+        "description": "Bitten by a radioactive spider, high school student Peter Parker gained the speed, strength and powers of a spider. Adopting the name Spider-Man, Peter hoped to start a career using his new abilities. Taught that with great power comes great responsibility, Spidey has vowed to use his powers to help people.",
+        "modified": "2016-05-10T09:42:19-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009664",
+        "name": "Thor",
+        "description": "As the Norse God of thunder and lightning, Thor wields one of the greatest weapons ever made, the enchanted hammer Mjolnir. While others have described Thor as an over-muscled, oafish imbecile, he's quite smart and compassionate. He's self-assured, and he would never, ever stop fighting for a worthwhile cause.",
+        "modified": "2020-03-10T17:06:15-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009697",
+        "name": "Wolverine",
+        "description": "Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws. Treated like an animal, it took years for him to control himself. Now, he's a premiere member of both the X-Men and the Avengers.",
+        "modified": "2016-05-02T12:21:44-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009189",
+        "name": "Black Widow",
+        "description": "Despite super spy Natasha Romanoff's checkered past, she's become one of S.H.I.E.L.D.'s most deadly assassins and a frequent member of the Avengers.",
+        "modified": "2013-09-18T15:54:04-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009338",
+        "name": "Hawkeye",
+        "description": "A master marksman and longtime friend of Black Widow, Clint Barton serves as the Avengers' amazing archer.",
+        "modified": "2013-09-18T15:57:48-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/90/50fecaf4f101b",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009156",
+        "name": "Apocalypse",
+        "description": "Born nearly five thousand years ago in what is now Egypt, Apocalypse is arguably the world's first mutant. Survivors of his reign know him by many names: En Sabah Nur, 'The First One,' 'He Who Is All.''",
+        "modified": "2013-10-21T14:39:22-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/e0/526166076a1d0",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009165",
+        "name": "Avengers",
+        "description": "Earth's Mightiest Heroes joined forces to take on threats that were too big for any one hero to tackle. With a roster that has included Captain America, Iron Man, Ant-Man, Hulk, Thor, Wasp and dozens more over the years, the Avengers have come to be regarded as Earth's No. 1 team.",
+        "modified": "2015-12-17T14:00:27-0500",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/20/5102c774ebae7",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009257",
+        "name": "Cyclops",
+        "description": "Scott Summers was the first of two sons born to Major Christopher Summers, a test pilot for the U.S. Air Force, and his wife Katherine Anne. Christopher was flying his family home from vacation when their plane was attacked by a spacecraft from the interstellar Shi'ar Empire.",
+        "modified": "2016-05-05T15:35:44-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/526547e2d90ad",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009282",
+        "name": "Doctor Strange",
+        "description": "Once a highly successful, yet notably egotistical, surgeon, Doctor Stephen Strange endured a terrible accident that led him to discover the hidden world of magic and alternate dimensions.",
+        "modified": "2015-03-24T17:28:36-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/5261a85a501fe",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009313",
+        "name": "Gambit",
+        "description": "Abandoned at birth due to his burning red eyes, the child who would one day become Remy Etienne LeBeau was kidnapped from his hospital ward by members of the New Orleans Thieves Guild who referred to the child as 'le diable blanc' - the white devil.",
+        "modified": "2016-02-24T17:54:56-0500",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/40/52696aa8aee99",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009372",
+        "name": "Jean Grey",
+        "description": "Jean Grey was 10 years old when her mutant telepathic powers first manifested after experiencing the emotions of a dying friend. Her parents, frightened by their daughter's powers, contacted Professor Charles Xavier. Xavier explained that Jean was a mutant and he offered to help her learn to use her abilities at his School for Gifted Youngsters.",
+        "modified": "2013-10-21T13:28:09-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009407",
+        "name": "Loki",
+        "description": "Loki Laufeyson, the Asgardian God of Mischief, is Thor's adopted brother and frequent foe. As the master of magic and illusion, Loki has been both enemy and ally to the heroes of Midgard.",
+        "modified": "2013-10-21T14:45:05-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/526547f509313",
+            "extension": "jpg"
+        }
+    },
+    {
+        "id": "1009417",
+        "name": "Magneto",
+        "description": "One of the most powerful mutants, Erik Magnus Lehnsherr is the master of magnetism and a frequent adversary of the X-Men in their struggle for mutant rights. Born a German Jew named Max Eisenhardt, he experienced firsthand how humanity treats those who are different.",
+        "modified": "2013-10-24T13:32:33-0400",
+        "thumbnail": {
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/5261a7e53f827",
+            "extension": "jpg"
         }
     }
 ]
