@@ -1,19 +1,10 @@
 // src/pages/CharactersPage.test.jsx
 
-import { expect, test, jest } from '@jest/globals'
+import { expect, test } from '@jest/globals'
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import { BrowserRouter } from 'react-router-dom'
+import { createRoutesStub } from 'react-router'
 import CharactersPage from './CharactersPage'
-
-// Mock useLoaderData to return our test data
-jest.mock('react-router-dom', () => ({
-  ...jest.requireActual('react-router-dom'),
-  useLoaderData: () => [
-    { id: "1", name: "Thor" },
-    { id: "2", name: "Captain America" }
-  ]
-}));
 
 // Mock data for characters
 const characters = [
@@ -28,16 +19,26 @@ const characters = [
 ];
 
 test('render CharactersPage component', async () => {
-    // Render the CharactersPage component within a simple routing context
-    render(
-        <BrowserRouter>
-            <CharactersPage />
-        </BrowserRouter>
-    )
+    // Create a stub for the routes to include CharactersPage
+    const Stub = createRoutesStub([
+        {
+            path: '/characters',
+            Component: CharactersPage,
+            HydrateFallback: () => null,
+            // Retourner directement le tableau pour correspondre au loader réel
+            loader: () => characters,
+        },
+    ])
+
+    // Render the CharactersPage component within the routing context
+    render(<Stub initialEntries={['/characters']} />)
 
     // Wait for the heading to appear to ensure routing/render updates are settled
-    const heading = await screen.findByRole('heading', { level: 1, name: 'Liste des personnages' })
+    const heading = await screen.findByRole('heading', { level: 2, name: 'Marvel Characters' })
     expect(heading).toBeInTheDocument()
+
+    // expect the document title to be "Characters | Marvel App"
+    expect(document.title).toBe('Characters | Marvel App')
 
     // expect the character Thor to be in the document
     const thorElement = screen.getByText(characters[0].name);
