@@ -1,26 +1,18 @@
-import { useLoaderData } from "react-router-dom";
-import { getCharacters } from "../api/characters-api";
-import CharactersList from "../components/CharactersList";
+import { useLoaderData } from 'react-router-dom'
+import CharactersList from '../components/CharactersList'
+import NumberOfCharacters from '../components/NumberOfCharacters'
 
-const CharactersPage = () => {
-  const characters = useLoaderData();
-  console.log("Characters in page:", characters);
-
-  if (!characters || characters.length === 0) {
-    return <p>Aucun personnage trouvé.</p>;
-  }
+function CharactersPage() {
+  const characters = useLoaderData()
+  console.log('Characters in page:', characters)
 
   return (
     <div>
       <h1>Liste des personnages</h1>
+      <NumberOfCharacters characters={characters} />
       <CharactersList characters={characters} />
     </div>
-  );
-};
-
-// Le loader doit être SYNCHRONE si getCharacters() retourne un tableau
-export function loader() {
-  return getCharacters();
+  )
 }
 
-export default CharactersPage;
+export default CharactersPage

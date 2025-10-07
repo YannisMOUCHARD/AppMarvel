@@ -1,15 +1,21 @@
-import React from 'react';
+// src/components/NumberOfCharacters.jsx 
 
-function NumberOfCharacters({ characters = [] }) {
-  const count = characters.length;
+/**
+ * NumberOfCharacters component
+ * @param {*} Array of characters, default is an empty array
+ * @returns 
+ */
+export default function NumberOfCharacters({ characters = [] }) {
+    // If no characters are provided or the array is empty
+    if (characters.length === 0) {
+      return <p>There is no character</p>;
+    }
 
-  return (
-    <p>
-      {count === 0
-        ? 'There is no character'
-        : `There is ${count} character${count > 1 ? 's' : ''}`}
-    </p>
-  );
+    // If there is exactly one character
+    if (characters.length === 1) {
+      return <p>There is 1 character</p>;
+    }
+
+    // If there are multiple characters
+    return <p>There are {characters.length} characters</p>;
 }
-
-export default NumberOfCharacters;

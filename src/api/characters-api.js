@@ -1,15 +1,20 @@
-import characters from "../data/characters.json";
-console.log("Imported characters:", characters);
+// src/api/characters-api.js
 
-export function getCharacters() {
+import characters from '../data/characters.json'
+
+/**
+ * returns the list of characters
+ * @returns 
+ */
+export const getCharacters = () => {
   return characters;
 }
 
 /**
- * Retourne un personnage par son identifiant
- * @param {number|string} id - identifiant du personnage
- * @returns {Object|null} Le personnage trouvé ou null si inexistant
+ * returns a character by id
+ * @param {*} id 
+ * @returns 
  */
-export function getCharacterById(id) {
-  return characters.find((c) => String(c.id) === String(id)) || null;
+export const getCharacterById = (id) => {
+  return characters.find(character => character.id === id);
 }

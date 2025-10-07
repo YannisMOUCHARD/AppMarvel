@@ -8,11 +8,15 @@ function CharactersList({ characters = [] }) {
         <li key={character.id}>
           <Link to={`/characters/${character.id}`}>
             <strong>{character.name}</strong>
-            {character.alias && <> ({character.alias})</>}
           </Link>
           <br />
-          {character.image && (
-            <img src={character.image} alt={character.name} width={100} />
+          {character.thumbnail && (
+            <img 
+              src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
+              alt={character.name} 
+              width={100} 
+              style={{ marginTop: '10px', borderRadius: '5px' }}
+            />
           )}
         </li>
       ))}
