@@ -10,7 +10,7 @@ function CharactersList({ characters = [] }) {
             <Link to={`/characters/${character.id}`} style={{ textDecoration: 'none', color: 'inherit', display: 'block' }}>
               <strong>{character.name}</strong>
               <br />
-              {character.thumbnail && (
+              {character.thumbnail && character.thumbnail.path && character.thumbnail.extension && (
                 <img 
                   src={`${character.thumbnail.path}.${character.thumbnail.extension}`}
                   alt={character.name} 

@@ -7,10 +7,10 @@ function AboutPage() {
 
   return (
     <div>
-      <h2>À propos de l’application Marvel</h2>
+      <h2>About Marvel App</h2>
       <p>
-        Cette application présente une sélection de personnages issus de l’univers Marvel.
-        Elle est développée avec React et React Router.
+        This application presents a selection of characters from the Marvel universe.
+        It is developed with React and React Router.
       </p>
     </div>
   );
