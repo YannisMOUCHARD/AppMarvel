@@ -1,79 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="D:\BUT3\MarvelApp\src\pages\AboutPage.test.jsx">
-    <testCase name="renders AboutPage with correct title and heading" duration="65"/>
-    <testCase name="renders AboutPage with correct content" duration="12"/>
-    <testCase name="sets correct document title on mount" duration="3"/>
-    <testCase name="displays About heading with specific text" duration="5"/>
-    <testCase name="renders AboutPage component without errors" duration="5"/>
+    <testCase name="renders AboutPage with correct title and heading" duration="66"/>
+    <testCase name="renders AboutPage with correct content" duration="10"/>
+    <testCase name="sets correct document title on mount" duration="5"/>
+    <testCase name="displays About heading with specific text" duration="8"/>
+    <testCase name="renders AboutPage component without errors" duration="13"/>
     <testCase name="displays correct paragraph content" duration="4"/>
-    <testCase name="renders complete page structure" duration="6"/>
+    <testCase name="renders complete page structure" duration="12"/>
     <testCase name="displays full paragraph text" duration="2"/>
     <testCase name="contains specific keywords in content" duration="3"/>
   </file>
   <file path="D:\BUT3\MarvelApp\src\pages\CharacterDetail.test.jsx">
-    <testCase name="CharacterDetail should display character name in h2 heading" duration="73"/>
-    <testCase name="CharacterDetail should display &quot;Character not found&quot; when character is null" duration="5"/>
-    <testCase name="CharacterDetail should display &quot;Character not found&quot; when character is undefined" duration="6"/>
+    <testCase name="CharacterDetail should display character name in h2 heading" duration="72"/>
+    <testCase name="CharacterDetail should display &quot;Character not found&quot; when character is null" duration="9"/>
+    <testCase name="CharacterDetail should display &quot;Character not found&quot; when character is undefined" duration="8"/>
     <testCase name="CharacterDetail should display &quot;No image available&quot; when thumbnail is present" duration="5"/>
-    <testCase name="CharacterDetail should display &quot;No image available&quot; when thumbnail is missing" duration="5"/>
-    <testCase name="CharacterDetail should display character description when available" duration="3"/>
-    <testCase name="CharacterDetail should display empty paragraph when description is empty" duration="3"/>
-    <testCase name="CharacterDetail should display whitespace when description is only whitespace" duration="2"/>
-    <testCase name="CharacterDetail should handle character with different name correctly" duration="7"/>
-    <testCase name="CharacterDetail should handle character with special characters in name" duration="6"/>
-    <testCase name="CharacterDetail should render basic structure with character data" duration="5"/>
-    <testCase name="CharacterDetail should handle character without description gracefully" duration="5"/>
-  </file>
-  <file path="D:\BUT3\MarvelApp\src\pages\CharactersPage.test.jsx">
-    <testCase name="render CharactersPage component" duration="145"/>
+    <testCase name="CharacterDetail should display &quot;No image available&quot; when thumbnail is missing" duration="4"/>
+    <testCase name="CharacterDetail should display character description when available" duration="7"/>
+    <testCase name="CharacterDetail should display empty paragraph when description is empty" duration="5"/>
+    <testCase name="CharacterDetail should display whitespace when description is only whitespace" duration="3"/>
+    <testCase name="CharacterDetail should handle character with different name correctly" duration="12"/>
+    <testCase name="CharacterDetail should handle character with special characters in name" duration="4"/>
+    <testCase name="CharacterDetail should render basic structure with character data" duration="4"/>
+    <testCase name="CharacterDetail should handle character without description gracefully" duration="4"/>
   </file>
   <file path="D:\BUT3\MarvelApp\src\components\CharacterDetail.test.jsx">
-    <testCase name="displays character information correctly when image exists" duration="75"/>
-    <testCase name="displays character information correctly when image does not exist" duration="4"/>
+    <testCase name="displays character information correctly when image exists" duration="86"/>
+    <testCase name="displays character information correctly when image does not exist" duration="6"/>
     <testCase name="displays character information correctly when thumbnail is null" duration="6"/>
-    <testCase name="displays character information correctly when thumbnail path or extension is missing" duration="10"/>
-    <testCase name="displays &quot;Character not found&quot; when character is not provided" duration="4"/>
-    <testCase name="displays &quot;Character not found&quot; when character is null" duration="2"/>
-    <testCase name="displays &quot;Character not found&quot; when character is undefined" duration="5"/>
+    <testCase name="displays character information correctly when thumbnail path or extension is missing" duration="9"/>
+    <testCase name="displays &quot;Character not found&quot; when character is not provided" duration="6"/>
+    <testCase name="displays &quot;Character not found&quot; when character is null" duration="4"/>
+    <testCase name="displays &quot;Character not found&quot; when character is undefined" duration="3"/>
     <testCase name="displays character with empty description" duration="8"/>
-    <testCase name="displays character with missing description property" duration="8"/>
-  </file>
-  <file path="D:\BUT3\MarvelApp\src\pages\CharacterDetailPage.test.jsx">
-    <testCase name="CharacterDetailPage should have correct page title" duration="88"/>
-    <testCase name="CharacterDetailPage should display character name in h2 heading" duration="13"/>
-    <testCase name="CharacterDetailPage should display character not found when character is null" duration="8"/>
-    <testCase name="CharacterDetailPage should display error message when character not found" duration="11"/>
-    <testCase name="CharacterDetailPage should have correct page title for different characters" duration="14"/>
-    <testCase name="CharacterDetailPage should display character with special characters in name" duration="16"/>
-    <testCase name="CharacterDetailPage should handle empty character data gracefully" duration="11"/>
-    <testCase name="CharacterDetailPage should display character description when available" duration="8"/>
+    <testCase name="displays character with missing description property" duration="5"/>
   </file>
   <file path="D:\BUT3\MarvelApp\src\api\characters-api.test.js">
     <testCase name="characters-api getCharacters should return the list of characters" duration="1"/>
-    <testCase name="characters-api getCharacterById should return the correct character when a valid ID is provided" duration="0"/>
-    <testCase name="characters-api getCharacterById should return undefined when no character is found with the provided ID" duration="1"/>
+    <testCase name="characters-api getCharacterById should return the correct character when a valid ID is provided" duration="1"/>
+    <testCase name="characters-api getCharacterById should return undefined when no character is found with the provided ID" duration="0"/>
+  </file>
+  <file path="D:\BUT3\MarvelApp\src\pages\CharactersPage.test.jsx">
+    <testCase name="render CharactersPage component" duration="157"/>
+  </file>
+  <file path="D:\BUT3\MarvelApp\src\pages\CharacterDetailPage.test.jsx">
+    <testCase name="CharacterDetailPage should have correct page title" duration="102"/>
+    <testCase name="CharacterDetailPage should display character name in h2 heading" duration="25"/>
+    <testCase name="CharacterDetailPage should display character not found when character is null" duration="8"/>
+    <testCase name="CharacterDetailPage should display error message when character not found" duration="11"/>
+    <testCase name="CharacterDetailPage should have correct page title for different characters" duration="14"/>
+    <testCase name="CharacterDetailPage should display character with special characters in name" duration="14"/>
+    <testCase name="CharacterDetailPage should handle empty character data gracefully" duration="7"/>
+    <testCase name="CharacterDetailPage should display character description when available" duration="10"/>
   </file>
   <file path="D:\BUT3\MarvelApp\src\components\CharacterList.test.jsx">
-    <testCase name="renders CharactersList component with empty list when no characters provided" duration="75"/>
+    <testCase name="renders CharactersList component with empty list when no characters provided" duration="70"/>
     <testCase name="renders CharactersList component with empty list when empty array provided" duration="10"/>
-    <testCase name="renders CharactersList component with characters when provided" duration="31"/>
-    <testCase name="renders CharactersList with correct links to character details" duration="9"/>
-    <testCase name="renders multiple characters with correct individual links" duration="11"/>
-    <testCase name="displays all characters correctly with MemoryRouter" duration="28"/>
+    <testCase name="renders CharactersList component with characters when provided" duration="33"/>
+    <testCase name="renders CharactersList with correct links to character details" duration="22"/>
+    <testCase name="renders multiple characters with correct individual links" duration="12"/>
+    <testCase name="displays all characters correctly with MemoryRouter" duration="26"/>
     <testCase name="displays character information correctly when image exists" duration="4"/>
-    <testCase name="displays character information correctly when image does not exist" duration="2"/>
+    <testCase name="displays character information correctly when image does not exist" duration="3"/>
     <testCase name="displays character information correctly when thumbnail is null" duration="3"/>
-    <testCase name="displays character information correctly when thumbnail path or extension is missing" duration="3"/>
+    <testCase name="displays character information correctly when thumbnail path or extension is missing" duration="4"/>
     <testCase name="displays character information correctly when thumbnail path is missing" duration="2"/>
-    <testCase name="displays character information correctly when both path and extension are missing" duration="2"/>
+    <testCase name="displays character information correctly when both path and extension are missing" duration="4"/>
   </file>
   <file path="D:\BUT3\MarvelApp\src\pages\ContactPage.test.jsx">
-    <testCase name="ContactPage should have correct page title" duration="5"/>
-    <testCase name="ContactPage should display contact heading" duration="12"/>
-    <testCase name="ContactPage should display contact information" duration="6"/>
-    <testCase name="ContactPage should render page structure correctly" duration="6"/>
-    <testCase name="ContactPage should display French contact content" duration="2"/>
-    <testCase name="ContactPage should have accessible email link" duration="3"/>
+    <testCase name="ContactPage should have correct page title" duration="9"/>
+    <testCase name="ContactPage should display contact heading" duration="11"/>
+    <testCase name="ContactPage should display contact information" duration="9"/>
+    <testCase name="ContactPage should render page structure correctly" duration="5"/>
+    <testCase name="ContactPage should display French contact content" duration="5"/>
+    <testCase name="ContactPage should have accessible email link" duration="5"/>
   </file>
 </testExecutions>
