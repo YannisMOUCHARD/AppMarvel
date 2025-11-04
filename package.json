@@ -13,10 +13,12 @@
     "test:coverage": "jest --coverage"
   },
   "dependencies": {
+    "d3": "^6.7.0",
     "devmoji": "^2.3.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "react-router-dom": "^7.9.1"
+    "react-router-dom": "^7.9.1",
+    "recharts": "^3.3.0"
   },
   "devDependencies": {
     "@babel/plugin-syntax-jsx": "^7.27.1",
@@ -25,8 +27,10 @@
     "@commitlint/cli": "^20.1.0",
     "@commitlint/config-conventional": "^20.0.0",
     "@eslint/js": "^9.35.0",
+    "@playwright/test": "^1.56.1",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.0",
+    "@types/node": "^24.10.0",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
     "@vitejs/plugin-react": "^5.0.2",

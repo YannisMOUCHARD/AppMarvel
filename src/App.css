@@ -446,3 +446,8 @@ li:not(nav li) {
 }
 
 /* ...existing code... */
+@media (max-width: 600px) {
+  footer {
+    display: none;
+  }
+}

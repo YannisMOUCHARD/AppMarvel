@@ -7,6 +7,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 6,
+            "intelligence": 9,
+            "durability": 5,
+            "energy": 3,
+            "speed": 4,
+            "fighting": 6
         }
     },
     {
@@ -17,6 +25,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 10,
+            "intelligence": 10,
+            "durability": 10,
+            "energy": 10,
+            "speed": 10,
+            "fighting": 10
         }
     },
     {
@@ -27,6 +43,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 10,
+            "intelligence": 1,
+            "durability": 10,    
+            "energy": 1,
+            "speed": 10,
+            "fighting": 1
         }
     },
     {
@@ -37,6 +61,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/526033c8b474a",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 8,
+            "intelligence": 2,
+            "durability": 9,
+            "energy": 3,
+            "speed": 2,
+            "fighting": 5
         }
     },
     {
@@ -47,6 +79,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 10,
+            "intelligence": 4,
+            "durability": 10,
+            "energy": 2,
+            "speed": 4,
+            "fighting": 6
         }
     },
     {
@@ -57,6 +97,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 10,
+            "durability": 4,
+            "energy": 9,
+            "speed": 6,
+            "fighting": 5
         }
     },
     {
@@ -67,6 +115,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 2,
+            "intelligence": 8,
+            "durability": 3,
+            "energy": 7,
+            "speed": 5,
+            "fighting": 7
         }
     },
     {
@@ -77,6 +133,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 7,
+            "intelligence": 7,
+            "durability": 9,
+            "energy": 10,
+            "speed": 10,
+            "fighting": 4
         }
     },
     {
@@ -87,6 +151,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/526548a343e4b",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 5,
+            "intelligence": 8,
+            "durability": 6,
+            "energy": 3,
+            "speed": 7,
+            "fighting": 7
         }
     },
     {
@@ -97,6 +169,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 10,
+            "intelligence": 5,
+            "durability": 9,
+            "energy": 8,
+            "speed": 6,
+            "fighting": 8
         }
     },
     {
@@ -107,6 +187,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 5,
+            "intelligence": 5,
+            "durability": 9,
+            "energy": 2,
+            "speed": 6,
+            "fighting": 10
         }
     },
     {
@@ -117,6 +205,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/30/50fecad1f395b",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 7,
+            "durability": 4,
+            "energy": 2,
+            "speed": 6,
+            "fighting": 9
         }
     },
     {
@@ -127,6 +223,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/e/90/50fecaf4f101b",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 6,
+            "durability": 3,
+            "energy": 2,
+            "speed": 5,
+            "fighting": 8
         }
     },
     {
@@ -137,6 +241,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/e0/526166076a1d0",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 9,
+            "intelligence": 8,
+            "durability": 10,
+            "energy": 10,
+            "speed": 4,
+            "fighting": 8
         }
     },
     {
@@ -147,6 +259,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/70/526547e2d90ad",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 7,
+            "durability": 4,
+            "energy": 9,
+            "speed": 4,
+            "fighting": 8
         }
     },
     {
@@ -157,6 +277,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/f0/5261a85a501fe",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 2,
+            "intelligence": 9,
+            "durability": 3,
+            "energy": 10,
+            "speed": 3,
+            "fighting": 6
         }
     },
     {
@@ -167,6 +295,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/40/52696aa8aee99",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 4,
+            "intelligence": 6,
+            "durability": 4,
+            "energy": 8,
+            "speed": 6,
+            "fighting": 7
         }
     },
     {
@@ -177,6 +313,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/528d3412090b4",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 7,
+            "durability": 4,
+            "energy": 10,
+            "speed": 4,
+            "fighting": 6
         }
     },
     {
@@ -187,6 +331,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/526547f509313",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 4,
+            "intelligence": 9,
+            "durability": 6,
+            "energy": 9,
+            "speed": 5,
+            "fighting": 7
         }
     },
     {
@@ -197,6 +349,14 @@
         "thumbnail": {
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/5261a7e53f827",
             "extension": "jpg"
+        },
+        "capacities": {
+            "force": 3,
+            "intelligence": 8,
+            "durability": 5,
+            "energy": 10,
+            "speed": 3,
+            "fighting": 6
         }
     }
 ]
